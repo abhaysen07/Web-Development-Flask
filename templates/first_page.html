@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>
+		Abhishek Store
+	</title>
+	<link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='style1.css')}}">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css"/>
+</head>
+<body>
+	<nav>
+		<label class="logo">
+			Smartphone Bazaar.com
+		</label>
+		<ul>
+			<li>
+				<a class="active" href="/home">
+					Home
+				</a>
+			</li>
+			<li>
+				<a href="/about">
+					About
+				</a>
+			</li>
+			<li>
+				<a href="#">
+					Contact Us
+				</a>
+			</li>
+		</ul>
+	</nav>
+	<div class="container">
+		<a href="/register">
+			<div class="box">
+				<div class="icon">
+					<i class="fa fa-id-badge" aria-hidden="true">
+					</i>
+					<div class="content">
+						<h3>
+							New User
+						</h3>
+						<p>
+							First Time comes to Our Page. Register With us.
+						</p>
+					</div>
+				</div>
+			</div>
+		</a>
+		<a href="/login">
+			<div class="box">
+				<div class="icon">
+					<i class="fa fa-user-circle" aria-hidden="true"></i>
+					<div class="content">
+						<h3>
+							Existing User
+						</h3>
+						<p>
+							Existing User Can Login Through Here.
+						</p>
+					</div>
+				</div>
+			</div>
+		</a>
+	</div>
+	<footer>
+		<p>
+			Author: Abhishek Kumar
+			<a href="mailto:abhishekkumarsen97@outlook.in">
+				abhishekkumarsen97@outlook.in
+			</a>
+		</p>
+	</footer>
+</body>
+</html>

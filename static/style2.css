@@ -1,0 +1,84 @@
+*{
+	padding: 0;
+	margin: 0;
+	text-decoration: none;
+	list-style: none;
+	box-sizing: border-box;
+}
+body{
+	font-family: montserrat;
+	background-image: url("luca.jpg");
+	background-repeat: no-repeat;
+	background-size: 100;
+}
+nav{
+	background: rgb(90, 104, 106);
+	height: 30px;
+	width: 100%;
+	border: 1px solid rgb(98, 60, 46);
+}
+label.logo{
+	color: rgb(164, 229, 208);
+	font-size: 20px;
+	line-height: 25px;
+	padding: 10px 15px;
+	font-weight: bold;
+}
+nav ul{
+	float: right;
+	margin-right: 5px;
+}
+nav ul li{
+	display: inline-block;
+	line-height: 25px;
+	margin: 0 10px;
+}
+nav ul li a{
+	color: white;
+	font-size: 10px;
+	padding: 5px 10px;
+	border-radius: 3px;
+	text-transform: uppercase;
+}
+a.active,a:hover{
+	background: burlywood;
+	transition: .3s;
+}
+.container{
+
+	position: fixed;
+	width: 600px;
+	height: 300px;
+	margin: 50px auto;
+	left: 350px;
+	top: 50px;
+
+}
+.container .box{
+
+	position: fixed;
+	width:  calc(250px - 60px);
+	height: calc(240px - 10px);
+	background: rgb(71, 64, 130);
+	margin: auto;
+	box-sizing: border-box;
+	border-radius: 20px;
+	opacity: 0.8;
+	align-items: center;
+	align-content: center;
+	text-align: center;
+	color: white;
+
+}
+.container .box .content{
+
+	position: absolute;
+	height: calc(100% - 120px);
+	padding: 13px;
+	text-align: left;
+	box-sizing: border-box;
+	transition: 0.2s;
+	opacity: 1;
+	color: khaki;
+
+}

@@ -1,0 +1,127 @@
+*{
+	padding: 0;
+	margin: 0;
+	text-decoration: none;
+	list-style: none;
+	box-sizing: border-box;
+}
+body{
+	font-family: montserrat;
+	background-image: url("luca.jpg");
+	background-repeat: no-repeat;
+	background-size: 100;
+}
+nav{
+	background: rgb(90, 104, 106);
+	height: 30px;
+	width: 100%;
+	border: 1px solid rgb(98, 60, 46);
+}
+label.logo{
+	color: rgb(164, 229, 208);
+	font-size: 20px;
+	line-height: 25px;
+	padding: 10px 15px;
+	font-weight: bold;
+}
+nav ul{
+	float: right;
+	margin-right: 5px;
+}
+nav ul li{
+	display: inline-block;
+	line-height: 25px;
+	margin: 0 10px;
+}
+nav ul li a{
+	color: white;
+	font-size: 10px;
+	padding: 5px 10px;
+	border-radius: 3px;
+	text-transform: uppercase;
+}
+a.active,a:hover{
+	background: burlywood;
+	transition: .3s;
+}
+.container{
+	position: relative;
+	width: 800px;
+	height: 400px;
+	margin: 50px auto;
+	left: 50px;
+}
+.container .box{
+	position: relative;
+	width:  calc(350px - 40px);
+	height: calc(250px - 40px);
+	background: rgb(71, 64, 130);
+	float: left;
+	margin: 20px;
+	box-sizing: border-box;
+	overflow: hidden;
+	border-radius: 12px;
+}
+.container .box .icon{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: lightgray;
+	transition: 0.4s;
+	z-index: 1;
+}
+.container .box:hover .icon{
+	top: 20px;
+	left: calc(50% - 40px);
+	width: 80px;
+	height: 80px;
+	border-radius: 60%;
+}
+.container .box .icon .fa{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	font-size: 60px;
+	transition: 0.2s;
+	color: #fff;
+}
+.container .box:hover .icon .fa{
+	font-size: 30px;
+}
+.container .box .content{
+	position: absolute;
+	top: 100%;
+	height: calc(100% - 120px);
+	padding: 10px;
+	text-align: center;
+	box-sizing: border-box;
+	transition: 0.2s;
+	opacity: 0;
+}
+.container .box:hover .content{
+	top: 50px;
+	opacity: 1;
+}
+.container .box .content h3{
+	margin: 20px 0 13px ;
+	padding: 0;
+	color: #fff;
+	font-size: 13px;
+}
+.container .box .content p{
+	margin: 0;
+	padding: 0;
+	color: black;
+	font-size: 11px;
+	text-align: center;
+}
+footer{
+	background: rgb(90, 104, 106);
+	height: 25px;
+	width: 100%;
+	border: 1px solid rgb(98, 60, 46);
+	text-align: center;
+}
